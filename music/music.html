@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="utf-8">
+	<title>豆瓣音乐</title>
+	<link rel="icon" type="image/ico" href="image/dofav.png" />
+	<link rel="stylesheet" type="text/css" href="../FONT/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="music.css">
+	<script type="text/javascript" src="../js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="slider.js"></script>
+	<script type="text/javascript" src="music.js"></script>
+</head>
+<body>
+	<div>
+		<div id="navigator">
+			<div class="navi-left">
+				<ul>
+					<li><a href="../index.html">豆瓣</a></li>
+					<li><a href="../read/read.html">读书</a></li>
+					<li><a href="../movie/movie.html">电影</a></li>
+					<li><a href="../music/music.html">音乐</a></li>
+					<li><a href="https://www.douban.com/location/">同城</a></li>
+					<li><a href="https://www.douban.com/group/explore">小组</a></li>
+					<li><a href="https://read.douban.com/?dcs=top-nav&dcm=douban">阅读</a></li>
+					<li><a href="https://douban.fm/?from_=shire_top_nav">FM</a></li>
+					<li><a href="https://dongxi.douban.com/?dcs=top-nav&dcm=douban">东西</a></li>
+					<li><a href="">市集</a></li>
+					<li><a href="">更多</a></li>
+				</ul>
+			</div>
+			<div class="navi-right">
+				<ul class="navi-right-main">
+					<li id="download-app">
+						<a href="">下载豆瓣客户端</a>
+					</li>
+					<li><a href="">登陆</a></li>
+					<li><a href="">注册</a></li>
+				</ul>
+				<div class="download-intro">
+					<img src="image/download1.png">
+					<p>豆瓣</p>
+					<p>和有趣的人做有趣的事</p>
+					<img src="image/download2.png">
+					<p>
+						<a href=""><span>iPhone</span></a>
+						<span>·</span>
+						<a href=""><span>Android</span></a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="search-box">
+			<div class="search-box-pic">
+				<img src="image/doubanmusic.png">
+			</div>
+			<div class="search-box-box">
+				<input type="text" class="search-box-text" placeholder="唱片名、表演者、条码、ISRC">
+				<input type="submit" class="search-box-submit" value="">
+			</div>
+			<div class="clear-both"></div>
+		</div>
+		<div id="sub-navigator">
+			<ul>
+				<li><a href="">阿比鹿2015</a></li>
+				<li><a href="">音乐人</a></li>
+				<li><a href="">金羊毛计划</a></li>
+				<li><a href="">专题</a></li>
+				<li><a href="">歌单</a></li>
+				<li><a href="">排行榜</a></li>
+				<li><a href="">乐评</a></li>
+				<li><a href="">分类浏览</a></li>
+				<li><a href="">豆瓣FM</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div id="content-left">
+				<div id="pic-display">
+					<div id="banner_tabs" class="flexslider">
+						<ul class="slides">
+							<li>
+								<a title="" target="_blank" href="#">
+									<img class="slide1" src="image/alpha.png">
+								</a>
+							</li>
+							<li>
+								<a title="" target="_blank" href="#">
+									<img class="slide2" src="image/alpha.png">
+								</a>
+							</li>
+							<li>
+								<a title="" target="_blank" href="#">
+									<img class="slide3" src="image/alpha.png">
+								</a>
+							</li>
+							<li>
+								<a title="" href="#">
+									<img class="slide4" src="image/alpha.png">
+								</a>
+							</li>
+							<li>
+								<a title="" href="#">
+									<img class="slide5" src="image/alpha.png">
+								</a>
+							</li>
+							<li>
+								<a title="" href="#">
+									<img class="slide6" src="image/alpha.png">
+								</a>
+							</li>
+							<li>
+								<a title="" href="#">
+									<img class="slide7" src="image/alpha.png">
+								</a>
+							</li>
+						</ul>
+						<ul class="flex-direction-nav">
+							<li><a class="flex-prev" href="javascript:;">Previous</a></li>
+							<li><a class="flex-next" href="javascript:;">Next</a></li>
+						</ul>
+						<ol id="bannerCtrl" class="flex-control-nav flex-control-paging">
+							<li><a>1</a></li>
+							<li><a>2</a></li>
+							<li><a>2</a></li>
+							<li><a>2</a></li>
+							<li><a>2</a></li>
+							<li><a>2</a></li>
+							<li><a>2</a></li>
+						</ol>
+					</div>
+				</div>
+				<div id="weekly-musicians">
+					<ul>
+						<li class="weekly-option">本周流行音乐人</li>
+						<li class="line-breaker">|</li>
+						<!-- <li><a  class="fast-option" href="#">上升最快音乐人</a></li> -->
+						<li class="fast-option">上升最快音乐人</li>
+					</ul>
+					<div class="musician-list popular-order">
+						<div class="musician-item">
+							<img src="image/wm1.jpg">
+							<p><span class="musician-name">谢春花</span></p>
+							<span class="musician-desc">民谣 FOLK</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>借我</span>
+									<span>荒岛</span>
+									<span>雀斑少女</span>
+									<span>这一天我什么都不想干</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+							<!-- 要把整个文件夹考进去！ -->
+							<!-- 还有把span的position设成absolute -->
+						</div>
+						<div class="musician-item">
+							<img src="image/wm2.jpg">
+							<p><span class="musician-name">花粥</span></p>
+							<span class="musician-desc">民谣 FOLK</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>多冷的皮革厂</span>
+									<span>Mr.屌丝之歌（又名撸撸撸）</span>
+									<span>海飞丝的芳香</span>
+									<span>老中医</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="musician-item">
+							<img src="image/wm3.jpg">
+							<p><span class="musician-name">左小诅咒</span></p>
+							<span class="musician-desc">摇滚 ROCK</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>我要发横财</span>
+									<span>苦鬼（2010）</span>
+									<span>当我离开你的时候（左小祖咒&陈珊妮）</span>
+									<span>我不能悲伤地坐在你身旁</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="musician-item">
+							<img src="image/wm4.jpg">
+							<p><span class="musician-name">岳璇</span></p>
+							<span class="musician-desc">轻音乐 Easy Listening</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>Sing it out（Cover 戴佩妮）</span>
+									<span>Mr.Lovable【Demo Version】</span>
+									<span>每次和你走在路上都会看见一只喵【Demo Version】</span>
+									<span>I miss you too【Demo Version】</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="musician-item">
+							<img src="image/wm5.jpg">
+							<p><span class="musician-name">小河</span></p>
+							<span class="musician-desc">民谣 FOLK</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>《121人啊》／121 People's Ah</span>
+									<span>Mr.w m</span>
+									<span>晚风（翻唱） - 08年7月27日，Live@D22 现场录音</span>
+									<span>晚风（翻唱） - 08年7月27日，Live@D22 现场录音</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="musician-item">
+							<img src="image/wm6.jpg">
+							<p><span class="musician-name">达闻西乐队</span></p>
+							<span class="musician-desc">摇滚 FOLK</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>猎人</span>
+									<span>Mr.Tick-Tock</span>
+									<span>Half way to go</span>
+									<span>Ant's OK</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="musician-item">
+							<img src="image/wm7.jpg">
+							<p><span class="musician-name">岳璇</span></p>
+							<span class="musician-desc">轻音乐 Easy Listening</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>D.O.G</span>
+									<span>十字路口</span>
+									<span>乱世巨星Laisee cover</span>
+									<span>替天行道</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="musician-item">
+							<img src="image/wm8.jpg">
+							<p><span class="musician-name">纣王老胡</span></p>
+							<span class="musician-desc">轻音乐 Easy Listening</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>匆匆</span>
+									<span>涩</span>
+									<span>离散</span>
+									<span>那个喝醉的夜晚挡不住我们的步伐</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="clear-both"></div>
+					</div>
+					<div class="musician-list fast-order">
+						<div class="musician-item">
+							<img src="image/wm2.jpg">
+							<p><span class="musician-name">花粥</span></p>
+							<span class="musician-desc">民谣 FOLK</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>多冷的皮革厂</span>
+									<span>Mr.屌丝之歌（又名撸撸撸）</span>
+									<span>海飞丝的芳香</span>
+									<span>老中医</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="musician-item">
+							<img src="image/wm7.jpg">
+							<p><span class="musician-name">岳璇</span></p>
+							<span class="musician-desc">轻音乐 Easy Listening</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>D.O.G</span>
+									<span>十字路口</span>
+									<span>乱世巨星Laisee cover</span>
+									<span>替天行道</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="musician-item">
+							<img src="image/wm4.jpg">
+							<p><span class="musician-name">岳璇</span></p>
+							<span class="musician-desc">轻音乐 Easy Listening</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>Sing it out（Cover 戴佩妮）</span>
+									<span>Mr.Lovable【Demo Version】</span>
+									<span>每次和你走在路上都会看见一只喵【Demo Version】</span>
+									<span>I miss you too【Demo Version】</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="musician-item">
+							<img src="image/wm1.jpg">
+							<p><span class="musician-name">谢春花</span></p>
+							<span class="musician-desc">民谣 FOLK</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>借我</span>
+									<span>荒岛</span>
+									<span>雀斑少女</span>
+									<span>这一天我什么都不想干</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+							<!-- 要把整个文件夹考进去！ -->
+							<!-- 还有把span的position设成absolute -->
+						</div>
+						<div class="musician-item">
+							<img src="image/wm8.jpg">
+							<p><span class="musician-name">纣王老胡</span></p>
+							<span class="musician-desc">轻音乐 Easy Listening</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>匆匆</span>
+									<span>涩</span>
+									<span>离散</span>
+									<span>那个喝醉的夜晚挡不住我们的步伐</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="musician-item">
+							<img src="image/wm6.jpg">
+							<p><span class="musician-name">达闻西乐队</span></p>
+							<span class="musician-desc">摇滚 FOLK</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>猎人</span>
+									<span>Mr.Tick-Tock</span>
+									<span>Half way to go</span>
+									<span>Ant's OK</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="musician-item">
+							<img src="image/wm3.jpg">
+							<p><span class="musician-name">左小诅咒</span></p>
+							<span class="musician-desc">摇滚 ROCK</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>我要发横财</span>
+									<span>苦鬼（2010）</span>
+									<span>当我离开你的时候（左小祖咒&陈珊妮）</span>
+									<span>我不能悲伤地坐在你身旁</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="musician-item">
+							<img src="image/wm5.jpg">
+							<p><span class="musician-name">小河</span></p>
+							<span class="musician-desc">民谣 FOLK</span>
+							<div class="hover-layer">
+								<a href="">
+									<span>《121人啊》／121 People's Ah</span>
+									<span>Mr.w m</span>
+									<span>晚风（翻唱） - 08年7月27日，Live@D22 现场录音</span>
+									<span>晚风（翻唱） - 08年7月27日，Live@D22 现场录音</span>
+								</a>
+							</div>
+							<span class="play-icon-2">
+								<i class="fa fa-play fa-md"></i>
+							</span>
+						</div>
+						<div class="clear-both"></div>
+					</div>
+				</div>
+				<div id="recommend">
+					<div class="recommend-title">
+						<span>编辑推荐</span>
+						<i id="rec-after" class="fa fa-angle-right fa-lg"></i>
+						<i id="rec-pre" class="fa fa-angle-left fa-lg"></i>
+						<!-- 为这两个icon设置jquery -->
+					</div>
+					<div class="recommend-list">
+						<div class="level-list">
+							<div class="recommend-item">
+								<img src="image/r1.jpg">
+								<div>
+									<p class="recommend-type">【专辑】</p>
+									<p><span class="recommend-name">沉默的一天</span></p>
+									<p><span class="recommend-author">Extermist Religious Group</span></p>
+									<p class="recommend-desc">这张EP的前身可以追溯到 Which Park，后来主唱去玩合成器，吉他手成了录音师。电，也不电，就像大连的潮水。</p>
+								</div>
+								<div class="hover-layer2">
+									<a href="">
+										<span>Sing it out(Cover)</span>
+										<span>Mr.Lovable【ling D】</span>
+										<span>每次和你走在路上都会看见</span>
+										<span>I miss you too much</span>
+									</a>
+								</div>
+								<span class="play-icon-3">
+									<i class="fa fa-play fa-md"></i>
+								</span>
+							</div>
+							<div class="recommend-item">
+								<img src="image/r2.jpg">
+								<div>
+									<p class="recommend-type">【专辑】</p>
+									<p><span class="recommend-name">IBEXMOON</span></p>
+									<p><span class="recommend-author">Extermist Religious Group</span></p>
+									<p class="recommend-desc">一支北京的原始黑金属乐队。成员來自此前已停止活动的两支黑金属名团：恶刺 / 骸骨占卜</p>
+								</div>
+								<div class="hover-layer2">
+									<a href="">
+										<span>Sing it out(Cover)</span>
+										<span>Mr.Lovable【ling D】</span>
+										<span>每次和你走在路上都会看见</span>
+										<span>I miss you too much</span>
+									</a>
+								</div>
+								<span class="play-icon-3">
+									<i class="fa fa-play fa-md"></i>
+								</span>
+							</div>
+							<div class="recommend-item">
+								<img src="image/r3.jpg">
+								<div>
+									<p class="recommend-type">【专辑】</p>
+									<p><span class="recommend-name">沉默的一天</span></p>
+									<p><span class="recommend-author">School Nature Boy Boy Nature</span></p>
+									<p class="recommend-desc">在成都说唱圈子已快要被“Trap+成都话”这种模式吃定之时，Niyo 给我们带来了一些别的。</p>
+								</div>
+								<div class="hover-layer2">
+									<a href="">
+										<span>Sing it out(Cover)</span>
+										<span>Mr.Lovable【ling D】</span>
+										<span>每次和你走在路上都会看见</span>
+										<span>I miss you too much</span>
+									</a>
+								</div>
+								<span class="play-icon-3">
+									<i class="fa fa-play fa-md"></i>
+								</span>
+							</div>
+							<div class="recommend-item">
+								<img src="image/r4.jpg">
+								<div>
+									<p class="recommend-type">【专辑】</p>
+									<p><span class="recommend-name">沉默的一天</span></p>
+									<p><span class="recommend-author">Extermist Religious Group</span></p>
+									<p class="recommend-desc">这张EP的前身可以追溯到 Which Park，后来主唱去玩合成器，吉他手成了录音师。电，也不电，就像大连的潮水。</p>
+								</div>
+								<div class="hover-layer2">
+									<a href="">
+										<span>Sing it out(Cover)</span>
+										<span>Mr.Lovable【ling D】</span>
+										<span>每次和你走在路上都会看见</span>
+										<span>I miss you too much</span>
+									</a>
+								</div>
+								<span class="play-icon-3">
+									<i class="fa fa-play fa-md"></i>
+								</span>
+							</div>
+							<div class="recommend-item">
+								<img src="image/r5.jpg">
+								<div>
+									<p class="recommend-type">【专辑】</p>
+									<p><span class="recommend-name">沉默的二天</span></p>
+									<p><span class="recommend-author">Extermist Religious Group</span></p>
+									<p class="recommend-desc">这张EP的前身可以追溯到 Which Park，后来主唱去玩合成器，吉他手成了录音师。电，也不电，就像大连的潮水。</p>
+								</div>
+								<div class="hover-layer2">
+									<a href="">
+										<span>Sing it out(Cover)</span>
+										<span>Mr.Lovable【ling D】</span>
+										<span>每次和你走在路上都会看见</span>
+										<span>I miss you too much</span>
+									</a>
+								</div>
+								<span class="play-icon-3">
+									<i class="fa fa-play fa-md"></i>
+								</span>
+							</div>
+							<div class="recommend-item">
+								<img src="image/r6.jpg">
+								<div>
+									<p class="recommend-type">【专辑】</p>
+									<p><span class="recommend-name">沉默的三天</span></p>
+									<p><span class="recommend-author">Extermist Religious Group</span></p>
+									<p class="recommend-desc">这张EP的前身可以追溯到 Which Park，后来主唱去玩合成器，吉他手成了录音师。电，也不电，就像大连的潮水。</p>
+								</div>
+								<div class="hover-layer2">
+									<a href="">
+										<span>Sing it out(Cover)</span>
+										<span>Mr.Lovable【ling D】</span>
+										<span>每次和你走在路上都会看见</span>
+										<span>I miss you too much</span>
+									</a>
+								</div>
+								<span class="play-icon-3">
+									<i class="fa fa-play fa-md"></i>
+								</span>
+							</div>
+							<div class="clear-both"></div>
+						</div>
+					</div>
+					<div class="clear-both"></div>
+				</div>
+				<div id="ad1">
+					<img src="image/ad1.jpg">
+				</div>
+				<div id="new-cd">
+					<div class="cd-title">
+						<span class="cd-title-name">新碟榜</span>
+						<span class="cd-title-sort1">最热</span>
+						<span class="cd-title-sort2">|华语|欧美|日韩|单曲</span>
+						<span class="cd-title-more">更多</span>
+					</div>
+					<div class="cd-content">
+						<div class="cd-item">
+							<img src="image/cd1.jpg">
+							<a href=""><span>H.A.M.<span></a>
+							<p>王若琳</p>
+							<div class="star-rate">
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star grey-star"></i>
+								<span>8.8</span>
+							</div>
+						</div>
+						<div class="cd-item">
+							<img src="image/cd2.jpg">
+							<a href=""><span>野</span></a>
+							<p>李宇春</p>
+							<div class="star-rate">
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star grey-star"></i>
+								<span>7.8</span>
+							</div>
+						</div>
+						<div class="cd-item">
+							<img src="image/cd3.jpg">
+							<a href=""><span>Dangerous Woman</span></a>
+							<p>Ariana Grande</p>
+							<div class="star-rate">
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star grey-star"></i>
+								<i class="fa fa-star grey-star"></i>
+								<span>6.8</span>
+							</div>
+						</div>
+						<div class="cd-item">
+							<img src="image/cd4.jpg">
+							<a href=""><span>A Moon Shaped Pool</span></a>
+							<p>Radiohead</p>
+							<div class="star-rate">
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star grey-star"></i>
+								<span>8.3</span>
+							</div>
+						</div>
+						<div class="cd-item">
+							<img src="image/cd5.jpg">
+							<a href=""><span>Future Present Past</span></a>
+							<p>Radiohead</p>
+							<div class="star-rate">
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<span>9.8</span>
+							</div>
+						</div>
+						<div class="cd-item">
+							<img src="image/cd6.jpg">
+							<a href=""><span>陪着我走</span></a>
+							<p>林忆莲</p>
+							<div class="star-rate">
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star grey-star"></i>
+								<i class="fa fa-star grey-star"></i>
+								<i class="fa fa-star grey-star"></i>
+								<span>5.6</span>
+							</div>
+						</div>
+						<div class="cd-item">
+							<img src="image/cd7.jpg">
+							<a href=""><span>Fallen Angels</span></a>
+							<p>Bob Dylan</p>
+							<div class="star-rate">
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star grey-star"></i>
+								<i class="fa fa-star grey-star"></i>
+								<span>8.9</span>
+							</div>
+						</div>
+						<div class="cd-item">
+							<img src="image/cd8.jpg">
+							<a href=""><span>Free Somebody</span></a>
+							<p>LUNA</p>
+							<div class="star-rate">
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star yellow-star"></i>
+								<i class="fa fa-star grey-star"></i>
+								<span>8.5</span>
+							</div>
+						</div>
+						<div class="clear-both"></div>
+					</div>
+				</div>
+				<div id="recently-hot">
+					<div class="hot-title">
+						<span class="cd-title-name">近期热门歌单</span>
+						<span class="cd-title-sort1">最热</span>
+						<span class="cd-title-sort2">|流行|摇滚|民谣|原声</span>
+						<span class="cd-title-more">更多</span>
+					</div>
+					<div class="hot-content">
+						<div class="hot-item">
+							<img src="image/list1.jpg">
+							<div class="hot-item-text">
+								<p>
+									<a class="title-link" href="">少年你别走我还没唱完</a>
+									<span class="text-number">(38)</span>
+								</p>
+								<p class="text-author">
+								<a class="text-author-link">Connie</a>
+								制作|78收藏</p>
+								<ol>
+									<li>日が落ちるまで</li>
+									<li>beautiful(Japanese  ver.)</li>
+									<li>散歩</li>
+								</ol>
+								<p class="non-decimal">...</p>
+							</div>
+							<div class="hover-layer3">
+								<i class="fa fa-play fa-md play-icon4"></i>
+							</div>
+						</div>
+						<div class="hot-item">
+							<img src="image/list2.jpg">
+							<div class="hot-item-text">
+								<p>
+									<a class="title-link" href="">写意东风事</a>
+									<span class="text-number">(38)</span>
+								</p>
+								<p class="text-author">
+								<a class="text-author-link">Connie</a>
+								制作|78收藏</p>
+								<ol>
+									<li>1.是我不好</li>
+									<li>2.你就是我的风景</li>
+									<li>3.七百年后</li>
+								</ol>
+								<p class="non-decimal">...</p>
+							</div>
+							<div class="hover-layer3">
+								<i class="fa fa-play fa-md play-icon4"></i>
+							</div>
+						</div>
+						<div class="hot-item">
+							<img src="image/list3.jpg">
+							<div class="hot-item-text">
+								<p>
+									<a class="title-link" href="">慧田粤语经典歌曲</a>
+									<span class="text-number">(38)</span>
+								</p>
+								<p class="text-author">
+								<a class="text-author-link">Connie</a>
+								制作|78收藏</p>
+								<ol>
+									<li>K歌之王 (国)</li>
+									<li>十年</li>
+									<li>逝去的心</li>
+								</ol>
+								<p class="non-decimal">...</p>
+							</div>
+							<div class="hover-layer3">
+								<i class="fa fa-play fa-md play-icon4"></i>
+							</div>
+						</div>
+						<div class="hot-item">
+							<img src="image/list4.jpg">
+							<div class="hot-item-text">
+								<p>
+									<a class="title-link" href="">经典流行劲歌金曲王菲</a>
+									<span class="text-number">(38)</span>
+								</p>
+								<p class="text-author">
+								<a class="text-author-link">Connie</a>
+								制作|78收藏</p>
+								<ol>
+									<li>暗涌</li>
+									<li>借口</li>
+									<li>季候风</li>
+								</ol>
+								<p class="non-decimal">...</p>
+							</div>
+							<div class="hover-layer3">
+								<i class="fa fa-play fa-md play-icon4"></i>
+							</div>
+						</div>
+						<div class="hot-item">
+							<img src="image/list5.jpg">
+							<div class="hot-item-text">
+								<p>
+									<a class="title-link" href="">钟情Leslie Cheung</a>
+									<span class="text-number">(38)</span>
+								</p>
+								<p class="text-author">
+								<a class="text-author-link">Connie</a>
+								制作|78收藏</p>
+								<ol>
+									<li>左右手</li>
+									<li>怪你过份美丽</li>
+									<li>I H2.怪你过份美丽</li>
+								</ol>
+								<p class="non-decimal">...</p>
+							</div>
+							<div class="hover-layer3">
+								<i class="fa fa-play fa-md play-icon4"></i>
+							</div>
+						</div>
+						<div class="hot-item">
+							<img src="image/list6.jpg">
+							<div class="hot-item-text">
+								<p>
+									<a class="title-link" href="">粤语是心头好</a>
+									<span class="text-number">(38)</span>
+								</p>
+								<p class="text-author">
+								<a class="text-author-link">Connie</a>
+								制作|78收藏</p>
+								<ol>
+									<li>Bang Bang</li>
+									<li>Buttons</li>
+									<li>Great DJ</li>
+								</ol>
+								<p class="non-decimal">...</p>
+							</div>
+							<div class="hover-layer3">
+								<i class="fa fa-play fa-md play-icon4"></i>
+							</div>
+						</div>
+						<div class="clear-both"></div>
+					</div>
+				</div>
+			</div>
+			<div id="content-right">
+				<div id="ad2">
+					<img src="image/ad2.jpg">
+				</div>
+				<div id="join-us">
+					<div class="data-item">
+						<p><a href="">37795</a></p>
+						<p>音乐人</p>
+					</div>
+					<div class="data-item">
+						<p><a href="">2379</a></p>
+						<p>博客</p>
+					</div>
+					<div class="data-item">
+						<p><a href="">900</a></p>
+						<p>厂牌</p>
+					</div>
+					<a class="join-in">我要加入</a>
+				</div>
+				<div id="tags">
+					<div class="tags-title">
+						<span class="tags-title-1">热门音乐人分类</span>
+						<span class="tags-title-more">更多</span>
+					</div>
+					<table>
+						<tr>
+							<td>流行</td>
+							<td>轻音乐</td>
+						</tr>
+						<tr>
+							<td>摇滚</td>
+							<td>古典</td>
+						</tr>
+						<tr>
+							<td>电子</td>
+							<td>世界音乐</td>
+						</tr>
+						<tr>
+							<td>民谣</td>
+							<td>说唱</td>
+						</tr>
+						<tr>
+							<td>绝世</td>
+							<td>原声</td>
+						</tr>
+					</table>
+				</div>
+				<div id="weekly-list">
+					<div class="weekly-list-title">
+						<span class="list-title-text">本周单曲榜</span>
+						<span class="play-icon"><a href=""><i></i>播放全部</a></span>
+					</div>
+					<ul class="list-type">
+						<li><a class="list-type-on" href="">最热</a></li>
+						<li><a href="">摇滚</a></li>
+						<li><a href="">民谣</a></li>
+						<li><a href="">流行</a></li>
+						<li><a href="">电子</a></li>
+						<div class="clear-both"></div>
+					</ul>
+					<ul class="play-list">
+						<li>
+							<div class="ed-img">
+								<img src="image/ed-1.jpg">
+								<div class="hover-layer4">
+									<i class="fa fa-play fa-md play-icon5"></i>
+								</div>
+							</div>
+							<div class="ed-desc">
+								<p><span class="ed-desc-title">多冷的皮革厂</span></p>
+								<p>花粥/63506次播放</p>
+							</div>
+							<span class="ed-number">1</span>
+						</li>
+						<li>
+							<div class="ed-img">
+								<img src="image/ed-2.jpg">
+								<div class="hover-layer4">
+									<i class="fa fa-play fa-md play-icon5"></i>
+								</div>
+							</div>
+							<div class="ed-desc">
+								<p><span class="ed-desc-title">突然悲伤了起来</span></p>
+								<p>放肆的肆/55506次播放</p>
+							</div>
+							<span class="ed-number">2</span>
+						</li>
+						<li>
+							<div class="ed-img">
+								<img src="image/ed-3.jpg">
+								<div class="hover-layer4">
+									<i class="fa fa-play fa-md play-icon5"></i>
+								</div>
+							</div>
+							<div class="ed-desc">
+								<p><span class="ed-desc-title">sing it out</span></p>
+								<p>刘瑞琪/43506次播放</p>
+							</div>
+							<span class="ed-number">3</span>
+						</li>
+						<li>
+							<div class="ed-img">
+								<img src="image/ed-4.jpg">
+								<div class="hover-layer4">
+									<i class="fa fa-play fa-md play-icon5"></i>
+								</div>
+							</div>
+							<div class="ed-desc">
+								<p><span class="ed-desc-title">白鹤</span></p>
+								<p>达文西乐队/9506次播放</p>
+							</div>
+							<span class="ed-number">4</span>
+						</li>
+						<li>
+							<div class="ed-img">
+								<img src="image/ed-5.jpg">
+								<div class="hover-layer4">
+									<i class="fa fa-play fa-md play-icon5"></i>
+								</div>
+							</div>
+							<div class="ed-desc">
+								<p><span class="ed-desc-title">山丘（cover李宗盛）</span></p>
+								<p>罔问/8506次播放</p>
+							</div>
+							<span class="ed-number">5</span>
+						</li>
+						<li>
+							<div class="ed-img">
+								<img src="image/ed-6.jpg">
+								<div class="hover-layer4">
+									<i class="fa fa-play fa-md play-icon5"></i>
+								</div>
+							</div>
+							<div class="ed-desc">
+								<p><span class="ed-desc-title">猎人</span></p>
+								<p>造枪者/7506次播放</p>
+							</div>
+							<span class="ed-number">6</span>
+						</li>
+						<li>
+							<div class="ed-img">
+								<img src="image/ed-7.jpg">
+								<div class="hover-layer4">
+									<i class="fa fa-play fa-md play-icon5"></i>
+								</div>
+							</div>
+							<div class="ed-desc">
+								<p><span class="ed-desc-title">Candy Memory</span></p>
+								<p>协会/6506次播放</p>
+							</div>
+							<span class="ed-number">7</span>
+						</li>
+						<li>
+							<div class="ed-img">
+								<img src="image/ed-8.jpg">
+								<div class="hover-layer4">
+									<i class="fa fa-play fa-md play-icon5"></i>
+								</div>
+							</div>
+							<div class="ed-desc">
+								<p><span class="ed-desc-title">红墙黑枪</span></p>
+								<p>金玟岐/3506次播放</p>
+							</div>
+							<span class="ed-number">8</span>
+						</li>
+						<li>
+							<div class="ed-img">
+								<img src="image/ed-9.jpg">
+								<div class="hover-layer4">
+									<i class="fa fa-play fa-md play-icon5"></i>
+								</div>
+							</div>
+							<div class="ed-desc">
+								<p><span class="ed-desc-title">四面涂鸦</span></p>
+								<p>你的男友系/506次播放</p>
+							</div>
+							<span class="ed-number">9</span>
+						</li>
+						<li>
+							<div class="ed-img">
+								<img src="image/ed-10.jpg">
+								<div class="hover-layer4">
+									<i class="fa fa-play fa-md play-icon5"></i>
+								</div>
+							</div>
+							<div class="ed-desc">
+								<p><span class="ed-desc-title">我就是想问一问</span></p>
+								<p>几时放假/506次播放</p>
+							</div>
+							<span class="ed-number">10</span>
+						</li>
+					</ul>
+				</div>
+				<div id="music250">
+					<p class="music250-title">豆瓣音乐250</p>
+					<span class="music250-more">更多</span>
+					<div class="cd250">
+						<div class="cd250-item">
+							<img src="image/cd1.jpg">
+							<p><span>timeless可拉思刻</span></p>
+						</div>
+						<div class="cd250-item">
+							<img src="image/cd2.jpg">
+							<p><span>阿岳正传</span></p>
+						</div>
+						<div class="cd250-item">
+							<img src="image/cd3.jpg">
+							<p><span>陈绮贞精选</span></p>
+						</div>
+						<div class="cd250-item">
+							<img src="image/cd4.jpg">
+							<p><span>一首歌 等日落</span></p>
+						</div>
+						<div class="cd250-item">
+							<img src="image/cd5.jpg">
+							<p><span>A little love</span></p>
+						</div>
+						<div class="cd250-item">
+							<img src="image/cd6.jpg">
+							<p><span>寓言</span></p>
+						</div>
+						<div class="cd250-item">
+							<img src="image/cd7.jpg">
+							<p><span>华丽的冒险</span></p>
+						</div>
+						<div class="cd250-item">
+							<img src="image/cd8.jpg">
+							<p><span>王妃</span></p>
+						</div>
+						<div class="cd250-item">
+							<img src="image/cd9.jpg">
+							<p><span>Say I am you</span></p>
+						</div>
+					</div>
+				</div>
+				<div id="app">
+					<a href="">
+						<div class="app-item">
+							<span class="app-icon1"></span>
+							<p class="app-1">豆瓣FM客户端</p>
+							<p class="app-2">让好音乐继续</p>
+							<span class="app-more">></span>
+						</div>
+					</a>
+					<a href="">
+						<div class="app-item">
+							<span class="app-icon2"></span>
+							<p class="app-1">豆瓣音乐人客户端</p>
+							<p class="app-2">发现当下最酷的独立音乐</p>
+							<span class="app-more">></span>
+						</div>
+					</a>
+				</div>
+				<div id="contact-us">
+					<span class="con-title">联系我们</span>
+					<a href="" class="con-email">artists@douban.com</a>
+					<div class="con-items">
+						<div class="con-item">
+							<span class="con-item-icon1"></span>
+							<p class="con-item-name"><span>音乐人小站</span></p>
+						</div>
+						<div class="con-item">
+							<span class="con-item-icon2"></span>
+							<p class="con-item-name"><span>音乐人微博</span></p>
+						</div>
+						<div class="con-item">
+							<span class="con-item-icon3"></span>
+							<p class="con-item-name"><span>音乐人微信</span></p>
+						</div>
+						<div class="con-item">
+							<span class="con-item-icon4"></span>
+							<p class="con-item-name"><span>FM小站</span></p>
+						</div>
+						<div class="con-item">
+							<span class="con-item-icon5"></span>
+							<p class="con-item-name"><span>FM微信</span></p>
+						</div>
+						<div class="con-item">
+							<span class="con-item-icon6"></span>
+							<p class="con-item-name"><span>FM微信</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear-both"></div>
+		</div>
+		<div id="footer">
+			<span class="company">© 2005－2016 douban.com, all rights reserved 北京豆网科技有限公司</span>
+			<ul class="footer-list">
+				<li><a href="">关于豆瓣</a></li>
+				<li><a href="">在豆瓣工作</a></li>
+				<li><a href="">联系我们</a></li>
+				<li><a href="">免责声明</a></li>
+				<li><a href="">帮助中心</a></li>
+				<li><a href="">手机音乐</a></li>
+				<li><a href="">豆瓣广告</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
