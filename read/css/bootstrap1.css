@@ -218,26 +218,26 @@ a span:hover{
 	position: absolute;
 	margin-top: 25px;
 	margin-left: 110px;
-	font-size: 6px;
+	font-size: 12px;
 	color: black;
 }
 .writer{
 	position: absolute;
-	font-size: 6px;
+	font-size: 12px;
 	margin-left: 20px;
 	margin-top: 45px;
 	color: black;
 }
 .kind{
 	position: absolute;
-	font-size: 6px;
+	font-size: 12px;
 	margin-top: 60px;
 	margin-left: 20px;
 	color: black;
 }
 .kind1{
 	position: absolute;
-	font-size: 6px;
+	font-size: 12px;
 	margin-top: 80px;
 	margin-left: 20px;
 	color: black;
@@ -246,7 +246,7 @@ a span:hover{
 	position: absolute;
 	margin-top: 110px;
 	margin-left: -70px;
-	font-size: 6px;
+	font-size: 12px;
 	color: #666666;
 }
 .ele{
@@ -255,13 +255,13 @@ a span:hover{
 	margin-left: 20px;
 	background-color: #A1A1A1;
 	color: #FFFFFF;
-	font-size: 6px;
+	font-size: 12px;
 }
 .box{
 	height: 180px;
 }
 .sm-t{
-	font-size: 6px;
+	font-size: 12px;
 	margin-left: 7px;
 }
 .box2{
@@ -269,7 +269,7 @@ a span:hover{
     height: 170px;
 }
 .price{
-	font-size: 5px;
+	font-size: 12px;
 	color: #4B4B4B;
 }
 .mar-top{
@@ -453,15 +453,10 @@ a span:hover{
 }
 .bookname{
 	margin-top: 5px;
-	/*width: 100px;*/
-	/*height: 18px;*/
 	display: inline-block;
 	color: #3377AA;
 	font-size: 13px;
 	text-align: left;
-	/*white-space:nowrap; 
-	overflow:hidden; 
-	text-overflow:ellipsis;	*/
 }
 .writername{
 	width: 100px;
