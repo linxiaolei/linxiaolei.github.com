@@ -23,14 +23,14 @@ a#dou:hover+img{
     float: left;
     margin: 6px 12px 0 0px;
     margin-left: 3px;
-    font-size: 1px;
+    font-size: 12px;
     color: #d5d5d5;
 }
 
 .menu-2{
     margin-top: -15px;
     float: right;
-    font-size: 2px;
+    font-size: 12px;
     color: #d5d5d5;
 }
 .row-1-1{
@@ -63,7 +63,7 @@ a#dou:hover+img{
     border-radius: 3px;
  /*   color: #ddd;*/
     color: black;
-    font-size: 2px;
+    font-size: 12px;
     padding-left: 5px;
     border: 1px solid #eaeaea;
 }
@@ -88,7 +88,7 @@ a#dou:hover+img{
 
 .row-3-1{
     color: #27a;
-    font-size: 1px;
+    font-size: 12px;
     /*margin-top: 25px;*/
     /*padding-top: 20px;*/
     margin-left: -32px;
@@ -183,7 +183,7 @@ a#dou:hover+img{
     margin-bottom: 10px;
 }
 .Smalltitle{
-    font-size: 5px;
+    font-size: 12px;
     color: black;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -338,7 +338,7 @@ a#dou:hover+img{
     color: #666;
 }
 .row-4-6-2{
-    font-size: 4px;
+    font-size: 12px;
     color: #666;
     padding-left:200px;
     padding-right: 5px;
@@ -356,7 +356,7 @@ a#dou:hover+img{
     width: 138px;
     height: 200px;
     color: #37a;
-    font-size: 5px;
+    font-size: 12px;
     text-align: center;
 }
 .row-4-7-2{
@@ -369,7 +369,7 @@ a#dou:hover+img{
     width: 138px;
     height: 200px;
     color: #37a;
-    font-size: 5px;
+    font-size: 12px;
     text-align: center;
     overflow: hidden;
 }
@@ -512,12 +512,12 @@ a.more:hover{
 }
 .writer a:link{
     color: #666;
-    font-size: 5px;
+    font-size: 12px;
     padding: 5px 0;
 }
 .content{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 8px;
+    font-size: 12px;
     line-height: 1.42857143;
     color: #333;
     background-color: #fff;
@@ -764,7 +764,7 @@ p.tip{
 
 .order{
     width: 20px;
-    font-size: 9px;
+    font-size: 12px;
     float: left;
     margin: 5px 0 5px 0px;
     padding: 5px 0 5px -10px;
@@ -780,32 +780,7 @@ p.tip{
 .row-5-5 a:hover,.row-5-4 a:hover{
     background-color: #37a;
 }
-
-/*.row-5-4-1 a:visited {
-    color: #666699;
-    text-decoration: none;
-}
-.row-5-4-1 a:link {
-    color: #37a;
-    text-decoration: none;
-}
-.row-5-4-1 a:visited {
-    color: #669;
-    text-decoration: none;
-}
-.row-5-4-1 a:link {
-    color: #37a;
-    text-decoration: none;
-}
-.row-5-4-1 a:hover{
-    background-color: #37a;
-}
-.row-5-5{
-    width: 310px;
-    height: 379px;
-}*/
 .row-5-6{
-    
     height: 276px;
     margin: 40px;
     background-repeat:no-repeat;
@@ -865,10 +840,8 @@ p.tip{
     color: rgba(0,0,0,0);
 }
 .row-5-9 li{
-   /* border-bottom: 1px solid #eee;*/
     margin: 0px 0 10px -40px;
     padding-bottom: 10px;
-    /*color: black;*/
 }
 .row-5-9 a:link{
     color: #37a;
@@ -880,7 +853,7 @@ p.tip{
 }
 .row-5-9-2{
     color: black;
-    font-size: 8px;
+    font-size: 12px;
 }
 .row-5-10-1{
     margin: 30px 0 0 -10px;
@@ -899,7 +872,6 @@ p.tip{
 }
 .icon-embassy-weixin{
    float: left;
-    /*display: inline;*/
     width: 40px;
     height: 40px;
     margin: 10px auto 5px 10px;
@@ -908,7 +880,6 @@ p.tip{
 .row-5-11{
     clear: both;
     height: 80px;
-
     display: block;
     margin: 20px auto 20px -22px;
     background: url(img/dou.png) no-repeat;
@@ -930,7 +901,7 @@ p.tip{
     padding: 6px 0;
     margin-top: 40px;
     border-top: 1px dashed #ddd;
-    font-size: 5px;
+    font-size: 12px;
 }
 .row-7-3{
     color: #669;
